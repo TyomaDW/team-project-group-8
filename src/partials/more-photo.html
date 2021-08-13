@@ -1,1 +1,44 @@
 <h3>Більше фото</h3>
+<div>
+  <picture>
+    <source
+      srcset="./src/images/more-photo/desktop/more-photo-0.webp 1x"
+      type="image/webp"
+      media="(min-width:1444px)"
+    />
+    <source
+      srcset="
+        ./src/images/more-photo/desktop/more-photo-0.jpg    1x,
+        ./src/images/more-photo/desktop/more-photo-0@2x.jpg 2x
+      "
+      media="(min-width:1444px)"
+    />
+    <!-- <source
+      srcset="./ 1x, ./ 2x"
+      type="image/webp"
+      media="(min-width:768px)"
+    />
+    <source
+      srcset="./ 1x, ./ 2x"
+      media="(min-width:768px)"
+    /> -->
+    <source
+      srcset="
+        ./images/more-photo/mobile/photo-1.webp    1x,
+        ./images/more-photo/mobile/photo-1@2x.webp 2x
+      "
+      type="image/webp"
+      media="(max-width: 767px)"
+    />
+    <source
+      srcset="
+        ./images/more-photo/mobile/photo-1.jpg    1x,
+        ./images/more-photo/mobile/photo-1@2x.jpg 2x
+      "
+      media="(max-width:767px)"
+    />
+    <img src="./images/more-photo/mobile/photo-1@2x.jpg" alt="Фігурки" class="more-photo-image" />
+  </picture>
+</div>
+<div></div>
+<div></div>
