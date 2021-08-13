@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./fonts/caviardreams-400-webfont.woff') format('woff'),
+    url('./fonts/caviardreams-400-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Caviar Dreams';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./fonts/caviardreams-700-webfont.woff') format('woff'),
+    url('./fonts/caviardreams-700-webfont.woff2') format('woff2');
+}
