@@ -1,0 +1,50 @@
+.hero-order__header {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+.hero-order__img {
+  width: 280px;
+  height: 171px;
+  background-color: var(--blue);
+  background-image: url(../images/order/mobile/order-page-1.jpg);
+  border-radius: 15px;
+}
+
+.hero-order-desription__text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.hero-order-imgs-list__img1 {
+  width: 144px;
+  height: 144px;
+  background-color: var(--blue);
+  background-image: url(../images/order/desktop/order-page-2.jpg);
+  border-radius: 0px 72px 72px 0px;
+}
+
+.hero-order-imgs-list__img2 {
+  width: 144px;
+  height: 144px;
+  background-color: var(--blue);
+  background-image: url(../images/order/desktop/order-page-3.jpg);
+  border-radius: 72px 0px;
+}
+
+.hero-order-imgs-list__img3 {
+  width: 144px;
+  height: 144px;
+  background-color: var(--blue);
+  background-image: url(../images/order/desktop/order-page-4.jpg);
+  border-radius: 0px 0px 72px 0px;
+}
