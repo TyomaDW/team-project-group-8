@@ -3,3 +3,38 @@
 
 @import './base/common';
 @import './base/container';
+
+@import './components/logo';
+
+@import './layout/header';
+
+/* Main Page */
+@import './layout/hero-main';
+@import './layout/gallery';
+@import './layout/more-photo';
+
+/* Modeling Page */
+@import './layout/hero-modeling';
+@import './layout/methods-of-creations';
+@import './layout/we-create-model';
+@import './layout/order-form-button';
+
+/* Scanning Page */
+@import './layout/hero-scanning';
+@import './layout/scan-process';
+
+/* Printing Page */
+@import './layout/hero-printing';
+@import './layout/model-examples';
+@import './layout/process-description';
+
+/* Take Order Page */
+@import './layout/hero-order';
+@import './layout/order-form';
+@import './layout/contacts';
+
+/* Contacts Page */
+@import './layout/hero-contacts';
+@import './layout/contact-form';
+
+@import './layout/footer';
