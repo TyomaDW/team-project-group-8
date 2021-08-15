@@ -2,15 +2,8 @@
 
     &__container{
         margin: auto;
-        padding: 32px 20px 247px 20px;
+        padding: 32px 20px 24px 20px;
         
-        // display: inline-block;
-        background-color: #fff;
-        background-image: url(../images/scan/mobile/scan-hero-1.jpg);
-        background-size: 280px;
-        background-repeat: no-repeat;
-        background-position: bottom;
-
     }
 
     &__title{
@@ -44,24 +37,32 @@
         }
 
     }
+
+    &__bg{
+        width: 280px;
+        height: 200px;
+        background-color: #fff;
+        background-image: url(../images/scan/mobile/scan-hero-1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
 screen and (min-resolution: 192dpi) and (min-width:320px),
 screen and (min-resolution: 2dppx) and (min-width:320px) {
-    .hero-scanning__container{
+    .hero-scanning__bg{
         background-image:url(../images/scan/mobile/scan-hero-1@2x.jpg);
     }
 }
 
 @media screen and (min-width:768px){
     .hero-scanning{
-        &__container{
-            position: relative;
-            padding: 35px 60px 52px 60px;
+        position: relative;
 
-            background-size: 241px;
-            background-position: bottom 52px right 0px;
+        &__container{            
+            padding: 35px 60px 52px 60px;
         }
 
         &__title{
@@ -76,12 +77,23 @@ screen and (min-resolution: 2dppx) and (min-width:320px) {
             }
         }
 
+        &__bg{
+            position: absolute;
+            width: 241px;
+            height: 172px;
+            bottom: 62px;
+            right: 0px;
+            background-color: var(--white);
+            background-image: url(../images/scan/mobile/scan-hero-1.jpg);
+            z-index: -1;
+        }
+
     }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
-    .hero-scanning__container{
+    .hero-scanning__bg{
         background-image:url(../images/scan/tablet/Scan-hero-1@2x.jpg);
     }
 }
@@ -91,37 +103,39 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
         &__container{
             position: relative;
             padding: 24px 189px 100px 189px;
-
-            background-size: 515px;
-            background-position: bottom 0px right 189px;
         }
 
         &__title{
             font-size: 48px;
         }
 
-        &__list{
-            columns:  auto;
-
-            // display: flex;
-            // flex-wrap: wrap;
-            // column-count: 2;
-            // column-gap:32px;
-            // column-width: 515px;
-            // list-style-position: inside;
-
+        &__list{          
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
         }
 
-        &__item{
-
+        &__item{      
+            display: flex;  
+            flex-wrap: wrap; 
             width: 515px;
             font-size: 18px;
             line-height:1.27;
 
-            &:not(:last-child){
+            &:nth(:last-child){
                 margin-bottom: 24px;
             }
         
+        }
+
+        &__bg{
+            position: absolute;
+            width: 515px;
+            height: 368px;
+            top:140px;
+            right: 189px;
+            background-image: url(../images/scan/mobile/scan-hero-1.jpg);
+            z-index: -1;
         }
 
     }
@@ -130,7 +144,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
 screen and (min-resolution: 192dpi) and (min-width:71444px),
 screen and (min-resolution: 2dppx) and (min-width:1444px) {
-    .hero-scanning__container{
+    .hero-scanning__bg{
         background-image:url(../images/scan/desktop/scan-hero-1@2x.jpg);
     }
 }
