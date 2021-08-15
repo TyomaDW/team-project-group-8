@@ -8,17 +8,17 @@
   @media screen and (min-width: 1444px) {
     padding: 40px 0 24px;
   }
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
+  &__container {
+    display: flex;
+    align-items: center;
 
-  @media screen and (min-width: 1444px) {
-    align-items: flex-start;
-    padding-right: 80px;
-    padding-left: 80px;
-    width: 1395px;
+    @media screen and (min-width: 1444px) {
+      align-items: flex-start;
+      padding-right: 80px;
+      padding-left: 80px;
+      width: 1395px;
+    }
   }
 }
 
@@ -51,6 +51,10 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &__list {
+    display: none;
+  }
 }
 
 .header__call-button {
@@ -62,10 +66,6 @@
 .call-button__menu {
 }
 
-.call-button__list {
-  display: none;
-}
-
 .call-button__item {
 }
 
@@ -75,36 +75,35 @@
 /* Navigation */
 
 .navigation {
-}
+  &__list {
+    display: none;
 
-.navigation__list {
-  display: none;
+    @media screen and (min-width: 1444px) {
+      display: flex;
+      text-align: center;
 
-  @media screen and (min-width: 1444px) {
-    display: flex;
-    text-align: center;
-
-    margin-right: 110px;
+      margin-right: 110px;
+    }
   }
-}
 
-.navigation__item {
-  &:not(:last-child) {
-    margin-right: 54px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 54px;
+    }
   }
-}
 
-.navigation__link {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--black);
-}
+  &__link {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--black);
+  }
 
-.navigation__menu {
-  display: none;
+  &__menu {
+    display: none;
+  }
 }
 
 .navigation__sub-item {
@@ -137,10 +136,10 @@
   color: var(--lang-btn);
 
   padding: 0;
-}
 
-.lang-button__menu {
-  display: none;
+  &__menu {
+    display: none;
+  }
 }
 
 .lang-button__list {
@@ -158,23 +157,23 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  &__link {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: var(--black);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 5px;
+  }
 }
 
 .phone-list__item {
-}
-
-.phone-list__link {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: var(--black);
-
-  display: flex;
-  align-items: center;
-}
-
-.phone-list__icon {
-  margin-right: 5px;
 }
