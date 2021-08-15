@@ -1,12 +1,41 @@
 .header {
+  padding: 29px 0 32px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 0 35px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    padding: 40px 0 24px;
+  }
 }
 
-.header__logo-wrapper {
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  margin-right: 23px;
 }
 
 /* Call Button */
 
+.call-button,
+.lang-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+
 .call-button {
+  margin-right: 20px;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header__call-button {
@@ -19,6 +48,7 @@
 }
 
 .call-button__list {
+  display: none;
 }
 
 .call-button__item {
@@ -33,6 +63,12 @@
 }
 
 .navigation__list {
+  display: none;
+
+  @media screen and (min-width: 1444px) {
+    display: flex;
+    text-align: center;
+  }
 }
 
 .navigation__item {
@@ -59,9 +95,16 @@
 }
 
 .lang-button {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.01em;
+  color: var(--lang-btn);
 }
 
 .lang-button__menu {
+  display: none;
 }
 
 .lang-button__list {
@@ -76,6 +119,7 @@
 /* Phone List */
 
 .phone-list {
+  display: none;
 }
 
 .phone-list__item {
