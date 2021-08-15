@@ -70,8 +70,10 @@ screen and (min-resolution: 2dppx) and (min-width:320px) {
         }
 
         &__item{
+
             width: 515px;
-        
+
+
             &:last-child{
                 margin-bottom: 0;
             }
@@ -113,14 +115,23 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            
         }
 
         &__item{      
-            display: flex;  
-            flex-wrap: wrap; 
+            // display: flex;
+            // flex-wrap: wrap;
+            
             width: 515px;
             font-size: 18px;
             line-height:1.27;
+            columns: 515px, 2;
+                    
+            &-wrap{
+                position: absolute;
+                top: 100px;
+                right: 189px;
+            }
 
             &:nth(:last-child){
                 margin-bottom: 24px;
