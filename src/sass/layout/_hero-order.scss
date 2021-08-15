@@ -1,28 +1,86 @@
+.hero-order-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .hero-order__header {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: var(--blue);
-  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-bottom: 24px;
+  }
 }
 
 .hero-order__img {
   width: 280px;
   height: 171px;
+  margin-bottom: 16px;
+  border-radius: 15px;
   background-color: var(--blue);
   background-image: url(../images/order/mobile/order-page-1.jpg);
-  border-radius: 15px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/order/mobile/order-page-1@2x.jpg);
+      background-size: contain;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 247px;
+    height: 116px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    background-image: url(../images/order/tablet/order-page-1.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/order/tablet/order-page-1@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1444px) {
+    min-width: 515px;
+    height: 315px;
+    margin-right: 32px;
+    background-image: url(../images/order/desktop/order-page-1.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/order/desktop/order-page-1@2x.jpg);
+      }
+    }
+  }
 }
 
-.hero-order-desription__text {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--black);
+.hero-order-desription {
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 55px;
+  }
+}
+
+.hero-order-desription__item:not(:last-child) {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1444px) {
+    margin-bottom: 24px;
+  }
+}
+
+.hero-order-imgs-list {
+  display: flex;
+
+  @media screen and (max-width: 1443px) {
+    display: none;
+  }
+}
+
+.hero-order-imgs-list__item:not(:last-child) {
+  margin-right: 41px;
 }
 
 .hero-order-imgs-list__img1 {
@@ -31,6 +89,14 @@
   background-color: var(--blue);
   background-image: url(../images/order/desktop/order-page-2.jpg);
   border-radius: 0px 72px 72px 0px;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/order/desktop/order-page-2@2x.jpg);
+      background-size: contain;
+    }
+  }
 }
 
 .hero-order-imgs-list__img2 {
@@ -39,6 +105,14 @@
   background-color: var(--blue);
   background-image: url(../images/order/desktop/order-page-3.jpg);
   border-radius: 72px 0px;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/order/desktop/order-page-3@2x.jpg);
+      background-size: contain;
+    }
+  }
 }
 
 .hero-order-imgs-list__img3 {
@@ -47,4 +121,12 @@
   background-color: var(--blue);
   background-image: url(../images/order/desktop/order-page-4.jpg);
   border-radius: 0px 0px 72px 0px;
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.25));
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/order/desktop/order-page-4@2x.jpg);
+      background-size: contain;
+    }
+  }
 }
