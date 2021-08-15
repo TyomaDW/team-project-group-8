@@ -1,37 +1,116 @@
 .contacts {
-  .contacts__container {
+  padding-bottom: 76px;
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.28;
+    color: #487996;
   }
-  .contacts__wraper {
+  @media screen and (max-width: 767px) {
+    &__wraper + &__wraper {
+      margin-top: 24px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__wraper + &__wraper {
+      margin-top: 30px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    &__wraper + &__wraper {
+      margin-top: 30px;
+    }
+
+    &__title {
+      margin-bottom: 18px;
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    &__container {
+      display: flex;
+      align-items: baseline;
+    }
+    &__wraper:last-child {
+      text-align: right;
+      margin-left: auto;
+    }
+    &__wraper:first-child {
+      margin-right: 85px;
+    }
   }
 }
 
-.title {
-  margin-bottom: 8px;
-  font-family: Cera Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  color: #487996;
-}
 .phone {
+  &__item + &__item {
+    margin-top: 8px;
+    @media screen and (min-width: 768px) {
+      margin-top: 18px;
+    }
+  }
+  &__link {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: capitalize;
+
+    color: #2b2b2b;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      line-height: 1.11;
+    }
+  }
 }
-.phone__item {
-}
-.phone__link {
-}
-.link {
-}
+
 .email {
-}
-.email__item {
-}
-.email__link {
+  &__link {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: capitalize;
+
+    color: #2b2b2b;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 18px;
+      line-height: 1.11;
+    }
+  }
 }
 .hours {
-  margin-top: 8px;
-}
-.hours__item {
-}
-.section {
+  &__item + &__item {
+    margin-top: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 18px;
+    }
+  }
+  .hours__text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 1440px) {
+      display: inline;
+      font-size: 18px;
+      line-height: 1.11;
+    }
+  }
 }
