@@ -1,12 +1,134 @@
 .hero-main {
+  font-family: 'Caviar Dreams', sans-serif;
+  padding: 32px 20px 50px 20px;
 }
 .hero-main__title {
+  @include fontSource(normal, 18px, 1.16, false);
+  text-align: center;
+
+  margin-bottom: 32px;
 }
 .hero-main__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
-.hero-main__pic {
+.hero-main__item {
+  width: 84px;
+  height: 84px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 114px;
+    height: 114px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1444px) {
+    width: 205px;
+    height: 205px;
+
+    &:not(:first-child) {
+      margin-left: 36px;
+    }
+  }
+  &:nth-child(1) {
+    border-top-right-radius: 50%;
+    background-image: url(../images/hero/mobile/hero-1.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 96dppx) {
+      background-image: url(../images/hero/mobile/hero-1@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/hero/tablet/hero-3.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 96dppx) and (min-width: 768px) {
+      background-image: url(../images/hero/tablet/hero-3@2x.jpg);
+    }
+    @media screen and (min-width: 1444px) {
+      background-image: url(../images/hero/desktop/hero-3.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      (min-resolution: 192dpi) and (min-width: 1444px),
+      (min-resolution: 96dppx) and (min-width: 1444px) {
+      background-image: url(../images/hero/desktop/hero-3@2x.jpg);
+    }
+  }
+  &:nth-child(2) {
+    border-radius: 50%;
+    background-image: url(../images/hero/mobile/hero-2.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 96dppx) {
+      background-image: url(../images/hero/mobile/hero-2@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/hero/tablet/hero-4.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 96dppx) and (min-width: 768px) {
+      background-image: url(../images/hero/tablet/hero-4@2x.jpg);
+    }
+    @media screen and (min-width: 1444px) {
+      background-image: url(../images/hero/desktop/hero-4.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      (min-resolution: 192dpi) and (min-width: 1444px),
+      (min-resolution: 96dppx) and (min-width: 1444px) {
+      background-image: url(../images/hero/desktop/hero-4@2x.jpg);
+    }
+  }
+  &:nth-child(3) {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+    background-image: url(../images/hero/mobile/hero-3.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 96dppx) {
+      background-image: url(../images/hero/mobile/hero-3@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/hero/tablet/hero-5.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+      (min-resolution: 192dpi) and (min-width: 768px),
+      (min-resolution: 96dppx) and (min-width: 768px) {
+      background-image: url(../images/hero/tablet/hero-5@2x.jpg);
+    }
+    @media screen and (min-width: 1444px) {
+      background-image: url(../images/hero/desktop/hero-5.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2) and (min-width: 1444px),
+      (min-resolution: 192dpi) and (min-width: 1444px),
+      (min-resolution: 96dppx) and (min-width: 1444px) {
+      background-image: url(../images/hero/desktop/hero-5@2x.jpg);
+    }
+  }
 }
-.hero-main__image {
-}
+
 .hero-main__subtitle {
+  @include fontSource(normal, 16px, 1.19, false);
+  text-align: center;
 }

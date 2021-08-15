@@ -1,227 +1,74 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Разметка секции "герой" -->
-    <section class="hero-main">
-      <div class="container">
-        <h1 class="hero-main__title">Інженерна, конструкторська та дизайнерська робота</h1>
-        <ul class="hero-main__list list">
-          <li class="hero-main__item">
-            <div class="hero-main__thumb">
-              <picture class="hero-main__pic">
-                <source
-                  media="(min-width: 1444px)"
-                  srcset="
-                    ./images/hero/desktop/hero-3.webp    1x,
-                    ./images/hero/desktop/hero-3@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1444px)"
-                  srcset="
-                    ./images/hero/desktop/hero-3.jpg    1x,
-                    ./images/hero/desktop/hero-3@2x.jpg 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/hero/tablet/hero-3.webp    1x,
-                    ./images/hero/tablet/hero-3@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./images/hero/tablet/hero-3.jpg 1x, ./images/hero/tablet/hero-3@2x.jpg 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/hero/mobile/hero-1.webp    1x,
-                    ./images/hero/mobile/hero-1@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="./images/hero/mobile/hero-1.jpg 1x, ./images/hero/mobile/hero-1@2x.jpg 2x"
-                  type="image/webp"
-                />
-                <img
-                  class="hero-main__image"
-                  src="./images/hero/mobile/hero-1.jpg"
-                  alt="Робот на траках"
-                />
-              </picture>
-            </div>
-          </li>
-          <li class="hero-main__item">
-            <div class="hero-main__thumb">
-              <picture class="hero-main__pic">
-                <source
-                  media="(min-width: 1444px)"
-                  srcset="
-                    ./images/hero/desktop/hero-4.webp    1x,
-                    ./images/hero/desktop/hero-4@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1444px)"
-                  srcset="
-                    ./images/hero/desktop/hero-4.jpg    1x,
-                    ./images/hero/desktop/hero-4@2x.jpg 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/hero/tablet/hero-4.webp    1x,
-                    ./images/hero/tablet/hero-4@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./images/hero/tablet/hero-4.jpg 1x, ./images/hero/tablet/hero-4@2x.jpg 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/hero/mobile/hero-2.webp    1x,
-                    ./images/hero/mobile/hero-2@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="./images/hero/mobile/hero-2.jpg 1x, ./images/hero/mobile/hero-2@2x.jpg 2x"
-                  type="image/webp"
-                />
-                <img class="hero-main__image" src="./images/hero/mobile/hero-2.jpg" alt="Лампа" />
-              </picture>
-            </div>
-          </li>
-          <li class="hero-main__item">
-            <div class="hero-main__thumb">
-              <picture class="hero-main__pic">
-                <source
-                  media="(min-width: 1444px)"
-                  srcset="
-                    ./images/hero/desktop/hero-5.webp    1x,
-                    ./images/hero/desktop/hero-5@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 1444px)"
-                  srcset="
-                    ./images/hero/desktop/hero-5.jpg    1x,
-                    ./images/hero/desktop/hero-5@2x.jpg 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    ./images/hero/tablet/hero-5.webp    1x,
-                    ./images/hero/tablet/hero-5@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./images/hero/tablet/hero-5.jpg 1x, ./images/hero/tablet/hero-5@2x.jpg 2x"
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="
-                    ./images/hero/mobile/hero-3.webp    1x,
-                    ./images/hero/mobile/hero-3@2x.webp 2x
-                  "
-                  type="image/webp"
-                />
-                <source
-                  media="(min-width: 320px)"
-                  srcset="./images/hero/mobile/hero-3.jpg 1x, ./images/hero/mobile/hero-3@2x.jpg 2x"
-                  type="image/webp"
-                />
-                <img class="hero-main__image" src="./images/hero/mobile/hero-3.jpg" alt="Череп" />
-              </picture>
-            </div>
-          </li>
-        </ul>
-        <h2 class="hero-main__subtitle">Ми втілюємо ідеї в реальність</h2>
+<!-- Разметка секции "герой" -->
+<section class="hero-main">
+  <div class="container">
+    <h1 class="hero-main__title">Інженерна, конструкторська та дизайнерська робота</h1>
+    <ul class="hero-main__list list">
+      <li class="hero-main__item">
+      </li>
+      <li class="hero-main__item">
+      </li>
+      <li class="hero-main__item">
+      </li>
+    </ul>
+    <h2 class="hero-main__subtitle">Ми втілюємо ідеї в реальність</h2>
 
-        <!-- Декоративные элементы, выполнены списками элементов. Классы этих списков 
+    <!-- Декоративные элементы, выполнены списками элементов. Классы этих списков 
           названы по БЭМ, но безотносительно данной страницы, так как по т.з. 
           они повторяются в модалке и могут быть вынесены в компоненты. -->
-        <ul class="decorative--left list">
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-          <li>
-            <div class="decorative__item--left"></div>
-          </li>
-        </ul>
-        <ul class="decorative--right list">
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-          <li>
-            <div class="decorative__item--right"></div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </body>
+    <ul class="decorative--left list">
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+      <li>
+        <div class="decorative__item--left"></div>
+      </li>
+    </ul>
+    <ul class="decorative--right list">
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+      <li>
+        <div class="decorative__item--right"></div>
+      </li>
+    </ul>
+  </div>
+</section>
+</body>
+
 </html>
