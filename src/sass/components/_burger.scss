@@ -1,4 +1,16 @@
 .burger-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  margin-right: 46px;
+
+  @media screen and (min-width: 1444px) {
+    display: none;
+  }
 }
 
 .burger-button__icon {
