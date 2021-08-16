@@ -1,6 +1,54 @@
 .methods {
   padding-top: 52px;
   padding-bottom: 52px;
+  position: relative;
+
+  @media screen and(max-width: 767px) {
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: var(--white);
+      z-index: 0;
+      width: 73.65px;
+      height: 73.65px;
+      left: -17px;
+      top: 169px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      border-radius: 25px 0px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: var(--white);
+    z-index: -1;
+    width: 73.65px;
+    height: 73.65px;
+    right: -17px;
+    top: 107px;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+
+    @media screen and (min-width: 768px) {
+      right: 8.4px;
+      top: 133px;
+
+      border-radius: 25px 0px;
+    }
+
+    @media screen and (min-width: 1444px) {
+      position: absolute;
+      width: 144px;
+      height: 144px;
+      right: -23px;
+      top: 265px;
+      border-radius: 72px 0px;
+    }
+  }
 
   &__title {
     margin-bottom: 16px;
@@ -13,14 +61,22 @@
 
   &__list {
     margin-bottom: 32px;
+    padding-left: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  &__item {
+    position: relative;
   }
 
   &__item::before {
     content: '';
-    display: inline-block;
+    display: block;
+    position: absolute;
     width: 7px;
     height: 7px;
-    margin-right: 10px;
+    left: -16px;
+    top: 6px;
 
     background: var(--blue);
     border-radius: 3px 0px;
