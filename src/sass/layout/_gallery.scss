@@ -1,0 +1,153 @@
+// падинги секции
+
+.gallery {
+  position: relative;
+  border-color: #e5e5e5;
+  @media screen and (min-width: 768px) {
+    margin-top: -50px;
+  }
+  @media screen and (min-width: 1444px) {
+    margin-top: -140px;
+  }
+}
+
+// фигурные блоки на фоне
+.gallery__decoration-list {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+.gallery__decoration-item {
+  position: absolute;
+  box-shadow: var(--shadow);
+  width: 74px;
+  height: 74px;
+  @media screen and (min-width: 1444px) {
+    width: 144px;
+    height: 144px;
+  }
+  &:nth-child(1) {
+    border-radius: 0px 0px 35px 0px;
+    left: 0;
+    @media screen and (min-width: 768px) {
+      top: 15px;
+      left: 0;
+    }
+    @media screen and (min-width: 1444px) {
+      top: 55px;
+      left: -157px;
+    }
+  }
+  &:nth-child(2) {
+    border-radius: 72px;
+    right: 0;
+    top: 287px;
+    @media screen and (min-width: 768px) {
+      right: -76px;
+      top: 165px;
+    }
+    @media screen and (min-width: 1444px) {
+      right: -260px;
+      top: 355px;
+    }
+  }
+  &:nth-child(3) {
+    border-radius: 25px 0px;
+    left: 0;
+    top: 350px;
+    @media screen and (min-width: 768px) {
+      top: 222px;
+      left: -30px;
+    }
+    @media screen and (min-width: 1444px) {
+    }
+  }
+  &:nth-child(4) {
+    border-radius: 0px 25px;
+    right: 0;
+    top: 731px;
+    @media screen and (min-width: 768px) {
+      border-radius: 0px 0px 35px 0px;
+      transform: rotate(-180deg);
+      right: -20px;
+      top: 95px;
+    }
+    @media screen and (min-width: 1444px) {
+      top: 210px;
+      right: -155px;
+    }
+  }
+}
+
+// контент
+
+.gallery__container {
+  padding-top: 52px;
+  padding-bottom: 52px;
+  margin: 0 auto;
+}
+.gallery__title {
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1444px) {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 52px;
+  }
+}
+
+.gallery__picture {
+  padding-bottom: 8px;
+  @media screen and (max-width: 768px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 315px;
+    display: inline-block;
+  }
+  @media screen and (min-width: 1444px) {
+    width: 515px;
+  }
+}
+.gallery__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.gallery__text {
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--blue);
+  width: 280px;
+
+  @media screen and (min-width: 1444px) {
+    width: 515px;
+  }
+}
+
+.gallery__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  li {
+    @media screen and (max-width: 1443px) {
+      width: 315px;
+    }
+  }
+}
