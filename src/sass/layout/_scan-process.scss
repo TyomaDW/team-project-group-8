@@ -1,0 +1,272 @@
+.scan-process{
+    padding-top: 24px;
+    padding-bottom: 52px;
+ 
+ 
+    &__container{
+        margin: 0 auto;
+        padding-left:20px;  
+        padding-right:20px;  
+    }
+ 
+    &__title{
+        margin-bottom: 16px;
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.27;
+        text-transform: uppercase;
+ 
+        color: var(--blue);
+    }
+ 
+    &__list{
+        list-style: none;
+        display: flex;        
+        flex-wrap: wrap;
+        margin-left: -14px;
+        margin-top: -14px;
+    }
+ 
+    &__item{
+        box-sizing: border-box;
+ 
+        display: flex;   
+        flex-direction: column;
+        padding: 15px 20px 20px 20px;
+        margin-left: 14px;
+        margin-top: 14px;
+        width: 133px;
+        text-decoration: none;
+ 
+        background-color: var(--white);
+        box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+        border-radius: 50px 0px;
+ 
+        opacity: 0.8;
+    }
+ 
+    &__text{
+        text-decoration: none;
+        text-align: center;
+        font-family: var(--main-font);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+ 
+        color: var(--blue);
+    }
+ 
+        &__img{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+        width: 94px;
+        height: 82px;
+        background-color: var(--white);
+        background-size: 94px 82px;
+ 
+        &-one{
+            background-image: url(../images/scan/mobile/scan-process-1.jpg);
+        }
+        &-two{
+            background-image: url(../images/scan/mobile/scan-process-2.jpg);
+        }
+        &-three{
+            background-image: url(../images/scan/mobile/scan-process-3.jpg);
+        }
+        &-four{
+            background-image: url(../images/scan/mobile/scan-process-4.jpg);
+        }
+ 
+ 
+    }
+}
+ 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+screen and (min-resolution: 192dpi) and (min-width:320px),
+screen and (min-resolution: 2dppx) and (min-width:320px) {
+    .scan-process__img{
+        &-one{
+            background-image:url(../images/scan/mobile/scan-process-1@2x.jpg);
+        }
+        &-two{
+            background-image: url(../images/scan/mobile/scan-process-2@2x.jpg);
+        }
+        &-three{
+            background-image: url(../images/scan/mobile/scan-process-3@2x.jpg);
+        }
+        &-four{
+            background-image: url(../images/scan/mobile/scan-process-4@2x.jpg);
+        }
+    }
+ 
+}
+ 
+ 
+@media screen and (min-width:768px){
+    .scan-process{
+        padding-top: 52px;
+        padding-bottom: 52px;
+    
+ 
+        &__container{  
+            // margin: 0 auto;          
+            padding-left:60px;  
+            padding-right:60px;  
+        }
+ 
+        &__title{
+            margin-bottom: 24px;
+        }
+ 
+        &__list{
+            margin-left: -12px;
+            margin-top: -12px;
+        }
+ 
+        &__item{
+            align-items: center;
+            padding: 17px 24px 25px 22px;
+            margin-left: 12px;
+            margin-top: 12px;
+            width: 153px;
+            text-decoration: none;
+    
+            background-color: var(--white);
+            box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+            border-radius: 50px 0px;
+    
+            opacity: 0.8;
+        }
+        &__img{
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-bottom: 22px;
+            width: 108px;
+            height: 94px;
+            background-color: var(--white);
+            background-size: 108px 94px;
+    
+            &-one{
+                background-image: url(../images/scan/tablet/scan-process-1.jpg);
+            }
+            &-two{
+                background-image: url(../images/scan/tablet/scan-process-2.jpg);
+            }
+            &-three{
+                background-image: url(../images/scan/tablet/scan-process-3.jpg);
+            }
+            &-four{
+                background-image: url(../images/scan/tablet/scan-process-4.jpg);
+            }    
+        }
+    }
+}
+ 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .scan-process__img{
+        &-one{
+            background-image:url(../images/scan/tablet/scan-process-1@2x.jpg);
+        }
+        &-two{
+            background-image: url(../images/scan/tablet/scan-process-2@2x.jpg);
+        }
+        &-three{
+            background-image: url(../images/scan/tablet/scan-process-3@2x.jpg);
+        }
+        &-four{
+            background-image: url(../images/scan/tablet/scan-process-4@2x.jpg);
+        }
+    }
+}
+ 
+@media screen and (min-width:1444px){
+    .scan-process{
+        padding-top: 0px;
+        padding-bottom: 100px;
+    
+ 
+        &__container{  
+            // margin: 0 auto;          
+            padding-left:189px;  
+            padding-right:189px;  
+        }
+ 
+        &__title{
+            margin-bottom: 52px;
+            font-size: 36px;
+            line-height: 1.25;
+        }
+ 
+        &__list{
+            margin-left: -21px;
+            margin-top: -21px;
+        }
+ 
+        &__item{
+            align-items: center;
+            padding: 49px 37px 26px 36px;
+            margin-left: 21px;
+            margin-top: 21px;
+            width: 250px;
+            text-decoration: none;
+    
+            background-color: var(--white);
+            box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+            border-radius: 50px 0px;
+    
+            opacity: 0.8;
+        }
+ 
+        &__text{
+            font-size: 18px;
+            line-height: 1.27;
+        }
+ 
+        &__img{
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-bottom: 22px;
+            width: 177px;
+            height: 154px;
+            background-color: var(--white);
+            background-size: 177px 154px;
+    
+            &-one{
+                background-image: url(../images/scan/desktop/scan-process-1.jpg);
+            }
+            &-two{
+                background-image: url(../images/scan/desktop/scan-process-2.jpg);
+            }
+            &-three{
+                background-image: url(../images/scan/desktop/scan-process-3.jpg);
+            }
+            &-four{
+                background-image: url(../images/scan/desktop/scan-process-4.jpg);
+            }    
+        }
+    }
+}
+ 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
+screen and (min-resolution: 192dpi) and (min-width:1444px),
+screen and (min-resolution: 2dppx) and (min-width:1444px) {
+    .scan-process__img{
+        &-one{
+            background-image:url(../images/scan/desktop/scan-process-1@2x.jpg);
+        }
+        &-two{
+            background-image: url(../images/scan/desktop/scan-process-2@2x.jpg);
+        }
+        &-three{
+            background-image: url(../images/scan/desktop/scan-process-3@2x.jpg);
+        }
+        &-four{
+            background-image: url(../images/scan/desktop/scan-process-4@2x.jpg);
+        }
+    }
+}
