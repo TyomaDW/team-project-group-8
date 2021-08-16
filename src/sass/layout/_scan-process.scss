@@ -1,6 +1,6 @@
 .scan-process{
     padding-top: 24px;
-    padding-bottom: 52px;
+    padding-bottom: 76px;
  
  
     &__container{
@@ -24,6 +24,7 @@
         list-style: none;
         display: flex;        
         flex-wrap: wrap;
+        margin-bottom: 52px;
         margin-left: -14px;
         margin-top: -14px;
     }
@@ -57,7 +58,7 @@
         color: var(--blue);
     }
  
-        &__img{
+    &__img{
         display: block;
         align-items: center;
         justify-content: center;
@@ -163,6 +164,7 @@ screen and (min-resolution: 2dppx) and (min-width:320px) {
             }    
         }
     }
+
 }
  
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -249,6 +251,10 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
                 background-image: url(../images/scan/desktop/scan-process-4.jpg);
             }    
         }
+    }
+
+    .order-form__button--distance{
+        margin-bottom: 116px;
     }
 }
  

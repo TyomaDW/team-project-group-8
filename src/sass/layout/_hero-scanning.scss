@@ -1,10 +1,12 @@
 .hero-scanning{
-    padding-top: 32px; ;
+    padding-top: 32px; 
  
     &__container{
+        position: relative;
         margin: auto;
         padding-left: 20px;
-        padding-right: 20px;        
+        padding-right: 20px;   
+
     }
  
     &__list{
@@ -12,6 +14,7 @@
     }
  
     &__title{
+        position: relative;
         text-decoration: none;
         margin-bottom: 16px;
         font-family: var(--main-font);
@@ -20,6 +23,8 @@
         line-height: 1.25;
  
         color: var(--blue);
+
+
     }
  
     &__item{
@@ -46,7 +51,7 @@
     &__bg{
         width: 280px;
         height: 200px;
-        background-color: #fff;
+        background-color: var(--white);
         background-image: url(../images/scan/mobile/scan-hero-1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
@@ -54,6 +59,7 @@
     }
 }
  
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
 screen and (min-resolution: 192dpi) and (min-width:320px),
 screen and (min-resolution: 2dppx) and (min-width:320px) {
@@ -92,7 +98,7 @@ screen and (min-resolution: 2dppx) and (min-width:320px) {
             bottom: 0px;
             right: 0px;
             background-color: var(--white);
-            background-image: url(../images/scan/mobile/scan-hero-1.jpg);
+            background-image: url(../images/scan/tablet/scan-hero-1.jpg);
             z-index: -1;
         }
  
@@ -102,7 +108,7 @@ screen and (min-resolution: 2dppx) and (min-width:320px) {
 screen and (min-resolution: 192dpi) and (min-width:768px),
 screen and (min-resolution: 2dppx) and (min-width:768px) {
     .hero-scanning__bg{
-        background-image:url(../images/scan/tablet/Scan-hero-1@2x.jpg);
+        background-image:url(../images/scan/tablet/scan-hero-1@2x.jpg);
     }
 }
     
@@ -146,7 +152,7 @@ screen and (min-resolution: 2dppx) and (min-width:768px) {
             height: 368px;
             top:140px;
             right: 189px;
-            background-image: url(../images/scan/mobile/scan-hero-1.jpg);
+            background-image: url(../images/scan/desktop/scan-hero-1.jpg);
             z-index: -1;
         }
  
@@ -160,3 +166,4 @@ screen and (min-resolution: 2dppx) and (min-width:1444px) {
         background-image:url(../images/scan/desktop/scan-hero-1@2x.jpg);
     }
 }
+

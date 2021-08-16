@@ -1,214 +1,214 @@
-.header {
-  position: relative;
-  background-color: var(--gray);
-  padding: 29px 0 32px;
+// .header {
+//   position: relative;
+//   background-color: var(--gray);
+//   padding: 29px 0 32px;
 
-  @media screen and (min-width: 768px) {
-    padding: 20px 0 35px;
-  }
+//   @media screen and (min-width: 768px) {
+//     padding: 20px 0 35px;
+//   }
 
-  @media screen and (min-width: 1444px) {
-    padding: 40px 0 24px;
-  }
+//   @media screen and (min-width: 1444px) {
+//     padding: 40px 0 24px;
+//   }
 
-  &__container {
-    display: flex;
-    align-items: center;
+//   &__container {
+//     display: flex;
+//     align-items: center;
 
-    @media screen and (min-width: 1444px) {
-      align-items: flex-start;
-      padding-right: 80px;
-      padding-left: 80px;
-      width: 1395px;
-    }
-  }
-}
+//     @media screen and (min-width: 1444px) {
+//       align-items: flex-start;
+//       padding-right: 80px;
+//       padding-left: 80px;
+//       width: 1395px;
+//     }
+//   }
+// }
 
-.logo-wrapper {
-  margin-right: 23px;
+// .logo-wrapper {
+//   margin-right: 23px;
 
-  @media screen and (min-width: 768px) {
-    margin-right: 170px;
-  }
+//   @media screen and (min-width: 768px) {
+//     margin-right: 170px;
+//   }
 
-  @media screen and (min-width: 1444px) {
-    margin-right: 213px;
-  }
-}
+//   @media screen and (min-width: 1444px) {
+//     margin-right: 213px;
+//   }
+// }
 
-// burger-btn
+// // burger-btn
 
-.burger-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  line-height: 0;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+// .burger-button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: transparent;
+//   border: none;
+//   padding: 0;
+//   line-height: 0;
+//   width: 40px;
+//   height: 40px;
+//   cursor: pointer;
 
-  @media screen and (min-width: 1440px) {
-    & {
-      display: none;
-    }
-  }
-}
+//   @media screen and (min-width: 1440px) {
+//     & {
+//       display: none;
+//     }
+//   }
+// }
 
-.burger-button__icon {
-  fill: var(--blue);
-  transition: fill var(--animation);
-}
+// .burger-button__icon {
+//   fill: var(--blue);
+//   transition: fill var(--animation);
+// }
 
-.burger-button:focus .burger-btn__icon,
-.burger-button:hover .burger-btn__icon {
-  fill: var(--color-acsent);
-}
+// .burger-button:focus .burger-btn__icon,
+// .burger-button:hover .burger-btn__icon {
+//   fill: var(--color-acsent);
+// }
 
-/* Call Button */
+// /* Call Button */
 
-.call-button,
-.lang-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-}
+// .call-button,
+// .lang-button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: transparent;
+//   border: none;
+// }
 
-.call-button {
-  margin-right: 20px;
-  padding: 0;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+// .call-button {
+//   margin-right: 20px;
+//   padding: 0;
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
 
-  &__list {
-    display: none;
-  }
-}
+//   &__list {
+//     display: none;
+//   }
+// }
 
-.header__call-button {
-}
+// .header__call-button {
+// }
 
-.call-button__icon {
-}
+// .call-button__icon {
+// }
 
-.call-button__menu {
-}
+// .call-button__menu {
+// }
 
-.call-button__item {
-}
+// .call-button__item {
+// }
 
-.call-button__link {
-}
+// .call-button__link {
+// }
 
-/* Navigation */
+// /* Navigation */
 
-.navigation {
-  &__list {
-    display: none;
+// .navigation {
+//   &__list {
+//     display: none;
 
-    @media screen and (min-width: 1444px) {
-      display: flex;
-      text-align: center;
+//     @media screen and (min-width: 1444px) {
+//       display: flex;
+//       text-align: center;
 
-      margin-right: 110px;
-    }
-  }
+//       margin-right: 110px;
+//     }
+//   }
 
-  &__item {
-    &:not(:last-child) {
-      margin-right: 54px;
-    }
-  }
+//   &__item {
+//     &:not(:last-child) {
+//       margin-right: 54px;
+//     }
+//   }
 
-  &__link {
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--black);
-  }
+//   &__link {
+//     font-family: var(--secondary-font);
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.16;
+//     letter-spacing: 0.01em;
+//     color: var(--black);
+//   }
 
-  &__menu {
-    display: none;
-  }
-}
+//   &__menu {
+//     display: none;
+//   }
+// }
 
-.navigation__sub-item {
-}
+// .navigation__sub-item {
+// }
 
-.navigation__sub-link {
-}
+// .navigation__sub-link {
+// }
 
-.navigationn__sub-item {
-}
+// .navigationn__sub-item {
+// }
 
-/* Lang Button */
+// /* Lang Button */
 
-.header__lang-button {
-  @media screen and (min-width: 768px) {
-    margin-right: 30px;
-  }
+// .header__lang-button {
+//   @media screen and (min-width: 768px) {
+//     margin-right: 30px;
+//   }
 
-  @media screen and (min-width: 1444px) {
-    margin-right: 95px;
-  }
-}
+//   @media screen and (min-width: 1444px) {
+//     margin-right: 95px;
+//   }
+// }
 
-.lang-button {
-  cursor: pointer;
+// .lang-button {
+//   cursor: pointer;
 
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: 0.01em;
-  color: var(--lang-btn);
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.28;
+//   letter-spacing: 0.01em;
+//   color: var(--lang-btn);
 
-  padding: 0;
+//   padding: 0;
 
-  &__menu {
-    display: none;
-  }
-}
+//   &__menu {
+//     display: none;
+//   }
+// }
 
-.lang-button__list {
-}
+// .lang-button__list {
+// }
 
-.lang-button__item {
-}
+// .lang-button__item {
+// }
 
-.lang-button__link {
-}
+// .lang-button__link {
+// }
 
-/* Phone List */
+// /* Phone List */
 
-.phone-list {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+// .phone-list {
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
 
-  &__link {
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    color: var(--black);
+//   &__link {
+//     font-family: var(--secondary-font);
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.01em;
+//     color: var(--black);
 
-    display: flex;
-    align-items: center;
-  }
+//     display: flex;
+//     align-items: center;
+//   }
 
-  &__icon {
-    margin-right: 5px;
-  }
-}
+//   &__icon {
+//     margin-right: 5px;
+//   }
+// }
 
-.phone-list__item {
-}
+// .phone-list__item {
+// }
