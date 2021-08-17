@@ -1,5 +1,5 @@
-<div class="contacts-form__wraper-contacts container">
-  <section class="contacts section">
+<section class="contacts-form__wraper-contacts section container">
+  <div class="contacts ">
       <div class="contacts__container">
           <div class="contacts__wraper">
               <h3 class="contacts__title">ТЕЛЕФОНИ</h3>
@@ -33,8 +33,8 @@
               </ul>
           </div>
       </div>
-  </section>
-  <section class="contacts-form__wraper conteiner">
+  </div>
+  <div class="contacts-form__wraper conteiner">
     <form method="POST">
       <h3 class="second-title contacts-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
 
@@ -66,10 +66,8 @@
       <label class="contacts-form__label-textarea" for="user-message">
         <span class="contacts-form__textarea-text">Повідомлення</span>
         <div class="contacts-form__textarea-wraper">
-          <textarea placeholder="Залишіть своє повідомлення" class="contacts-form__textarea"
-            name="user-message"
-            id="user-message">
-          </textarea>
+          <textarea class="contacts-form__textarea" name="user-message" id="user-message"
+          placeholder="Залишіть своє повідомлення"></textarea>
           <a class="link" href="">
             <svg class="contacts-form__textarea-icon" width="22" height="20">
               <use href="./images/symbol-defs.svg#paper-clip"></use>
@@ -86,5 +84,5 @@
         </button>
       </div>
     </form>
-  </section>
-</div>
+  </div>
+</section>
