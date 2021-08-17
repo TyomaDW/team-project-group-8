@@ -2,7 +2,6 @@
 
 .gallery {
   position: relative;
-  border-color: #e5e5e5;
   @media screen and (min-width: 768px) {
     margin-top: -50px;
   }
@@ -60,6 +59,9 @@
       left: -30px;
     }
     @media screen and (min-width: 1444px) {
+      border-radius: 72px 0px;
+      top: 416px;
+      left: -157px;
     }
   }
   &:nth-child(4) {
@@ -85,6 +87,9 @@
   padding-top: 52px;
   padding-bottom: 52px;
   margin: 0 auto;
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 100px;
+  }
 }
 .gallery__title {
   font-family: 'Jost', sans-serif;
