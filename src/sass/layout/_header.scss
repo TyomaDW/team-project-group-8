@@ -1,6 +1,60 @@
 .header {
   position: relative;
   padding: 29px 0 32px;
+  padding-right: 233px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: var(--white);
+    z-index: -1;
+    width: 73.65px;
+    height: 73.65px;
+    left: 0px;
+    top: 8px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 35px 0px 0px 35px;
+    transform: rotate(180deg);
+
+    @media screen and (min-width: 768px) {
+      left: 233px;
+    }
+
+    @media screen and (min-width: 1444px) {
+      width: 144px;
+      height: 144px;
+      top: 7px;
+      left: 330px;
+      border-radius: 72px 0px 0px 72px;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    background: var(--white);
+    z-index: -1;
+    width: 73.65px;
+    height: 73.65px;
+    right: 0px;
+    top: 8px;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 35px 0px 0px 35px;
+
+    @media screen and (min-width: 768px) {
+      right: 260px;
+    }
+
+    @media screen and (min-width: 1444px) {
+      width: 144px;
+      height: 144px;
+      top: 7px;
+      right: 350px;
+      border-radius: 72px 0px 0px 72px;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     padding: 20px 0 35px;
