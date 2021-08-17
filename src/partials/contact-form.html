@@ -1,0 +1,88 @@
+<section class="contacts-form__wraper-contacts section container">
+  <div class="contacts ">
+      <div class="contacts__container">
+          <div class="contacts__wraper">
+              <h3 class="contacts__title">ТЕЛЕФОНИ</h3>
+              <ul class="phone list">
+                  <li class="phone__item">
+                      <a class="phone__link link" href="tel:+380957384551">+38 (095) -73-84-551</a>
+                  </li>
+                  <li class="phone__item">
+                      <a class="phone__link link" href="tel:+380980025235">+38 (098) -00-25-235</a>
+                  </li>              
+              </ul>
+          </div>
+          <div class="contacts__wraper">
+              <h3 class="contacts__title">Email</h3>
+              <ul class="email list">
+                  <li class="email__item">
+                      <a class="email__link link" href="mailto:3dfreedom.info@gmail.com">3dfreedom.info@gmail.com</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="contacts__wraper">
+              <h3 class="contacts__title">РОБОЧИЙ ЧАС</h3>
+              <ul class="hours list">
+                  <li class="hours__item">
+                      <span class="hours__text">Пн-пт: </span>
+                      <span class="hours__text">з 8:00 до 19:00</span> </li>
+                  <li class="hours__item">
+                      <span class="hours__text">Сб, Нд: </span>
+                      <span class="hours__text">з 10:00 до 17:00</span> </li>
+                      </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="contacts-form__wraper conteiner">
+    <form method="POST">
+      <h3 class="second-title contacts-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+
+      <div class="contacts-form__wraper-name">
+        <input
+          class="contacts-form__input-name"
+          type="text"
+          name="user-name"
+          required
+          minlength="2"
+          placeholder=" "
+          id="user-name"
+        />
+        <label class="contacts-form__label-name" for="user-name"><span class="contacts-form__label-name-text">Ім’я</span></label>
+      </div>
+
+      <div class="contacts-form__wraper-email">
+        <input
+          class="contacts-form__input-email"
+          type="email"
+          name="user-email"
+          required
+          placeholder=" "
+          id="user-email"
+        />
+        <label class="contacts-form__label-email" for="user-email"><span class="contacts-form__label-email-text">Email</span></label>
+      </div>
+
+      <label class="contacts-form__label-textarea" for="user-message">
+        <span class="contacts-form__textarea-text">Повідомлення</span>
+        <div class="contacts-form__textarea-wraper">
+          <textarea class="contacts-form__textarea" name="user-message" id="user-message"
+          placeholder="Залишіть своє повідомлення"></textarea>
+          <a class="link" href="">
+            <svg class="contacts-form__textarea-icon" width="22" height="20">
+              <use href="./images/symbol-defs.svg#paper-clip"></use>
+            </svg>
+          </a>
+        </div>
+      </label>
+      <a class="contacts-form__link link" href=""
+        >*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</a
+      >
+      <div class="contacts-form__button-wraper">
+        <button class="contacts-form__button link" type="submit">
+          <span class="contacts-form__button-text">ВІДПРАВИТИ</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
