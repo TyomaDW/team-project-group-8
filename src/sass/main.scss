@@ -1,14 +1,15 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 
 @import './base/common';
 @import './base/container';
 
-
 @import './components/section';
-
 @import './components/logo';
 @import './components/burger';
+@import './components/mobile-menu';
+@import './components/background-blocks';
 
 @import './layout/header';
 

@@ -1,4 +1,4 @@
-<section class="header">
+<header class="header">
     <div class="header__container container">
 
         <!-- Logo -->
@@ -9,7 +9,7 @@
         </div>
 
         <!-- Burger -->
-        <button class="burger-button" type="button">
+        <button class="burger-button" type="button" data-menu-open>
             <svg class="burger-button__icon" width="32" height="32">
                 <use href="./images/symbol-defs.svg#burger-icon"></use>
             </svg>
@@ -67,10 +67,10 @@
             <div class="lang-button__menu">
                 <ul class="lang-button__list list">
                     <li class="lang-button__item">
-                        <a href="#" class="lang-button__link link" lang="en">ENG</a>
+                        <a href="#" class="lang-button__link link" lang="en">UKR</a>
                     </li>
                     <li class="lang-button__item">
-                        <a href="#" class="lang-button__link link" lang="en">UKR</a>
+                        <a href="#" class="lang-button__link link" lang="en">ENG</a>
                     </li>
                     <li class="lang-button__item">
                         <a href="#" class="lang-button__link link" lang="en">RUS</a>
@@ -98,6 +98,6 @@
                 </li>
             </ul>
         </div>
-
+        <include src="./partials/mobile-menu.html"></include>
     </div>
-</section>
+</header>
