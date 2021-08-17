@@ -132,6 +132,13 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--black);
+
+    transition: var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--bright-blue);
+    }
   }
 
   &__menu {
@@ -151,6 +158,8 @@
 /* Lang Button */
 
 .header__lang-button {
+  position: relative;
+
   @media screen and (min-width: 768px) {
     margin-right: 30px;
   }
@@ -169,21 +178,68 @@
   line-height: 1.28;
   letter-spacing: 0.01em;
   color: var(--lang-btn);
+  transition: var(--animation);
 
   padding: 0;
 
-  &__menu {
-    display: none;
+  &:hover,
+  &:focus {
+    color: var(--bright-blue);
   }
 }
 
-.lang-button__list {
+.lang-button__menu {
+  animation: changeBgColor;
+  animation-duration: 5000ms;
+  position: absolute;
+  top: 32px;
+  left: 14px;
+  transform: translate(-50%);
+  width: 80px;
+  padding: 16px 0;
+  border-radius: 2px;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  display: none;
 }
 
-.lang-button__item {
+.lang-button__menu::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: 27px;
+  border: 14px solid transparent;
+  border-bottom: 18px solid #ffffff;
+  border-radius: 2px;
+  width: 0;
+  height: 0;
+}
+
+.lang-button:hover + .lang-button__menu,
+.lang-button:focus + .lang-button__menu {
+  display: block;
+}
+
+.lang-button__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .lang-button__link {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--black);
+
+  transition: var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--bright-blue);
+  }
 }
 
 /* Phone List */
@@ -200,9 +256,15 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: var(--black);
+    transition: var(--animation);
 
     display: flex;
     align-items: center;
+
+    &:hover,
+    &:focus {
+      color: var(--bright-blue);
+    }
   }
 
   &__icon {
