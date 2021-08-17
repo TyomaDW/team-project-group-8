@@ -1,11 +1,8 @@
 .model-examples {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background-color: var(--gray)
 }
 
-.model-examples__title{
-    margin-bottom: 16px;
-}
 
 .model-examples__item {
     width: 132px;
@@ -38,6 +35,7 @@
 .model-examples__title{
     max-width: 280px;
     width: 100%;
+    padding-bottom: 16px;
 }
 
 .model-examples_text {
@@ -53,6 +51,7 @@
 
     .model-examples__title{
         margin-bottom: 25px;
+        max-width: 700px;
     }
 
     .model-examples__img {
