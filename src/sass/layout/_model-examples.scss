@@ -1,3 +1,8 @@
+.model-examples {
+    margin-bottom: 50px;
+    background-color: var(--gray)
+}
+
 .model-examples__item {
     width: 132px;
     height: 157px;
@@ -29,18 +34,13 @@
 .model-examples__title{
     max-width: 280px;
     width: 100%;
-    margin-bottom: 16px;
 }
 
 .model-examples_text {
     margin: 0;
-    font-family: Cera Pro;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.28;
     text-align: center;
-
     color: #487996;
 
 }
@@ -49,7 +49,6 @@
 
     .model-examples__title{
     max-width: 700px;
-    margin-bottom: 24px;
 }
 
     .model-examples__img {
@@ -73,6 +72,10 @@
 
 @media screen and (min-width: 1444px) {
 
+    .model-examples {
+        margin-bottom: 100px;
+    }
+
     .model-examples__img {
             height: 235px;
         }   
@@ -89,6 +92,10 @@
         margin-top: -21px;
     }
 
+    .model-examples_text {
+        font-size: 18px;
+        line-height: 23px;
+    }
 }
 
 
