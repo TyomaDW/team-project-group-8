@@ -143,6 +143,7 @@
 .navigation {
   &__list {
     display: none;
+    position: relative;
 
     @media screen and (min-width: 1444px) {
       display: flex;
@@ -153,6 +154,9 @@
   }
 
   &__item {
+    position: relative;
+    z-index: 100;
+
     &:not(:last-child) {
       margin-right: 54px;
     }
@@ -165,7 +169,6 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--black);
-
     transition: var(--animation);
 
     &:hover,
@@ -173,19 +176,71 @@
       color: var(--bright-blue);
     }
   }
+}
+.navigation__item-arrow::after {
+  display: block;
+  content: '';
+  position: absolute;
+  background-image: url(./../images/arrow-header-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 4px;
+  top: 10px;
+  left: 70px;
 
-  &__menu {
-    display: none;
+  .navigation__item:hover &,
+  .navigation__item:focus & {
+    background-image: url(./../images/arrow-header-up.svg);
   }
 }
 
+.navigation__menu {
+  display: none;
+  position: absolute;
+  left: -31px;
+  margin-top: 33px;
+  width: 144px;
+
+  .navigation__item:hover &,
+  .navigation__item:focus & {
+    display: block;
+  }
+}
+.navigation__menu-bg {
+  position: absolute;
+  background-color: var(--white);
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  width: 144px;
+  height: 111px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: -34px;
+  z-index: -1;
+}
+
 .navigation__sub-item {
+  display: block;
+  &:nth-child(1) {
+    margin-top: 33px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
 }
 
 .navigation__sub-link {
-}
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  transition: color var(--animation);
 
-.navigationn__sub-item {
+  &:hover,
+  &:focus {
+    color: var(--bright-blue);
+  }
 }
 
 /* Lang Button */
