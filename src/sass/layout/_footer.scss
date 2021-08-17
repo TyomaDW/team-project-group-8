@@ -23,7 +23,7 @@
   margin-bottom: 24px;
 }
 .nav__link {
-  font-family: 'Jost', sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
@@ -45,7 +45,7 @@
   margin-bottom: 24px;
 }
 .social__link {
-  font-family: 'Jost', sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
@@ -75,7 +75,7 @@
 .address__link {
   display: block;
   margin-top: 8px;
-  font-family: 'Jost', sans-serif;
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
