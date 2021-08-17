@@ -33,7 +33,7 @@
   &::after {
     content: '';
     display: block;
-    position: fixed;
+    position: absolute;
     background: var(--white);
     z-index: -1;
     width: 73.65px;
