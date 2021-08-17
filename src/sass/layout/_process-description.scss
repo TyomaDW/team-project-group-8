@@ -1,5 +1,5 @@
 .process-description {
-    margin-bottom: 75px;
+    padding-bottom: 75px;
     background-color: var(--gray)
 }
 
@@ -9,7 +9,7 @@
 
 .process-description__img-container {
     display:flex;
-    width: 280px;
+    min-width: 280px;
     margin-bottom: 16px;
 } 
 
@@ -68,7 +68,7 @@
 
    
     .process-description__item {
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     .process-description__img-container {
