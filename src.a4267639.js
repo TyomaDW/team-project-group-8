@@ -7,4 +7,4 @@ const t=document.querySelectorAll("a.scroll-to");for(let e of t)e.addEventListen
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu"),require("./js/scroll");
 },{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI","./js/scroll":"N8YO"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-group-8/src.bfd9359d.js.map
+//# sourceMappingURL=/team-project-group-8/src.a4267639.js.map
