@@ -1,5 +1,5 @@
 .model-examples {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .model-examples__item {
@@ -32,7 +32,7 @@
 .model-examples__title {
   max-width: 280px;
   width: 100%;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .model-examples_text {
@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 1444px) {
   .model-examples {
-    padding-bottom: 100px;
+    margin-bottom: 100px;
   }
 
   .model-examples__img {
