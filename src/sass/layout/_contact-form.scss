@@ -178,6 +178,7 @@
 }
 // button
 .contacts-form__button {
+  margin: 0 auto;
   width: 280px;
   height: 56px;
   background: #f5f5fa;
@@ -186,6 +187,12 @@
   border-radius: 30.5px;
   outline: none;
   border: transparent;
+
+  &:focus,
+  &:hover {
+    background: var(--bright-blue);
+    color: var(--white);
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts-form__button-wraper {
