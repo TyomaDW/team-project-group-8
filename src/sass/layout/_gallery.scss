@@ -137,7 +137,6 @@
   font-size: 16px;
   line-height: 1.25;
   color: var(--blue);
-  width: 280px;
 
   @media screen and (min-width: 1444px) {
     width: 515px;
@@ -150,7 +149,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  li {
+  .gallery__item {
     @media screen and (max-width: 1443px) {
       width: 315px;
     }
