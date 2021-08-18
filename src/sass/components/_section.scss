@@ -1,7 +1,7 @@
-.section + .section {
-  margin-top: 52px;
+.section {
+  padding-bottom: 52px;
 
-  @media screen and (min-width: 1440px) {
-    margin-bottom: 100px;
+  @media screen and (min-width: 1444px) {
+    padding-bottom: 100px;
   }
 }
