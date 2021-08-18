@@ -14,7 +14,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (min-width: 768px) and (max-width: 1443px) {
     &__container {
       display: flex;
       align-items: baseline;
@@ -33,7 +33,7 @@
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1444px) {
     &__wraper + &__wraper {
       margin-top: 30px;
     }
@@ -71,7 +71,7 @@
     &:hover {
       color: var(--color-acsent);
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1444px) {
       font-size: 18px;
       line-height: 1.11;
     }
@@ -94,7 +94,7 @@
     &:hover {
       color: var(--color-acsent);
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1444px) {
       font-size: 18px;
       line-height: 1.11;
     }
@@ -115,7 +115,7 @@
     line-height: 1.25;
     text-transform: capitalize;
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1444px) {
       display: inline;
       font-size: 18px;
       line-height: 1.11;
@@ -123,16 +123,17 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .contacts-bg{
+/*
+@media screen and (min-width: 1444px) {
+  .contacts-bg {
     display: block;
     max-width: 530px;
     height: 325px;
     background-color: var(--white);
-    background-image: url(../images/order/desktop/order-page-6.jpg);
+    background-image: url(../images/order/desktop/order-page-6.jpg); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-   
   }
 }
+*/
