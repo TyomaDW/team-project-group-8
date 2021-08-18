@@ -146,6 +146,8 @@
 }
 
 .call-button__menu {
+  animation: fadeIn;
+  animation-duration: 500ms;
   display: none;
   position: absolute;
   top: 35px;
@@ -336,6 +338,8 @@
 }
 
 .lang-button__menu {
+  animation: fadeIn;
+  animation-duration: 500ms;
   position: absolute;
   top: 32px;
   left: 14px;
