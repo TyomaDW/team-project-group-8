@@ -41,7 +41,7 @@
   .process-description__img-container {
     margin-right: 20px;
     padding-bottom: 0;
-    width: 247px;
+    min-width: 247px;
   }
 
   .process-description__text-list {
@@ -65,7 +65,7 @@
 
   .process-description__img-container {
     margin-right: 80px;
-    width: 250px;
+    min-width: 250px;
   }
 
   .process-description__text-item:not(:last-child) {
