@@ -63,6 +63,7 @@
   border: none;
   border-radius: 31px;
   cursor: pointer;
+  transition: background var(--animation), color var(--animation);
 
   &:focus,
   &:hover {
