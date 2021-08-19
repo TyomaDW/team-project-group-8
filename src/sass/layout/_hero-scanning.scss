@@ -1,16 +1,17 @@
 .hero-scanning {
   padding-top: 32px;
-
+ 
   &__container {
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
+    
   }
-
+ 
   &__list {
     list-style: none;
   }
-
+ 
   &__title {
     text-decoration: none;
     margin-bottom: 16px;
@@ -18,30 +19,30 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.25;
-
+ 
     color: var(--blue);
   }
-
+ 
   &__item {
     width: 280px;
-
+ 
     font-family: var(--main-font);
     font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
     text-decoration: none;
-
+ 
     color: var(--black);
-
-    &:not(:last-child) {
+ 
+    &:nth-child(-n + 2) {
       margin-bottom: 16px;
     }
-
+ 
     &:last-child {
       margin-bottom: 24px;
     }
   }
-
+ 
   &__bg {
     width: 280px;
     height: 200px;
@@ -52,7 +53,7 @@
     background-position: bottom;
   }
 }
-
+ 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
@@ -60,7 +61,7 @@
     background-image: url(../images/scan/mobile/scan-hero-1@2x.jpg);
   }
 }
-
+ 
 .hero-scanning__decoration-item {
   position: absolute;
   box-shadow: var(--shadow);
@@ -106,13 +107,15 @@
     left: 0;
     top: 957px;
     @media screen and (min-width: 768px) {
-      border-radius: 0px 0px;
-      box-shadow: transparent;
+      border-radius: 0px 0px 0px 0px;
+      box-shadow: 0px 0px 0px rgba(250, 250, 250, 250);      
     }
     @media screen and (min-width: 1444px) {
       left: -64px;
       top: 1077px;
       border-radius: 72px;
+      box-shadow: var(--shadow);
+
     }
   }
   &:nth-child(4) {
@@ -120,8 +123,8 @@
     right: -21px;
     top: 1033px;
     @media screen and (min-width: 768px) {
-      border-radius: 0px 0px;
-      box-shadow: transparent;
+      border-radius: 0px 0px 0px 0px;
+      box-shadow: 0px 0px 0px rgba(250, 250, 250, 250);
     }
     @media screen and (min-width: 1444px) {
       top: 667px;
@@ -130,7 +133,7 @@
       border-radius: 72px 0px;
     }
   }
-
+ 
   &:nth-child(5) {
     border-radius: 0px 0px 0px 35px;
     left: -18px;
@@ -167,19 +170,19 @@
       padding-left: 60px;
       padding-right: 60px;
     }
-
+ 
     &__title {
       font-size: 36px;
     }
-
+ 
     &__item {
       width: 515px;
-
+ 
       &:last-child {
         margin-bottom: 0;
       }
     }
-
+ 
     &__bg {
       position: absolute;
       width: 241px;
@@ -199,30 +202,30 @@
     background-image: url(../images/scan/tablet/scan-hero-1@2x.jpg);
   }
 }
-
+ 
 @media screen and (min-width: 1444px) {
   .hero-scanning {
     &__container {
       position: relative;
       padding: 24px 189px 100px 189px;
     }
-
+ 
     &__title {
       font-size: 48px;
     }
-
+ 
     &__list {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
     }
-
+ 
     &__item {
       width: 515px;
       font-size: 18px;
       line-height: 1.27;
       columns: 515px, 2;
-
+ 
       &-wrap {
         position: absolute;
         top: 100px;
@@ -232,7 +235,7 @@
         margin-bottom: 24px;
       }
     }
-
+ 
     &__bg {
       position: absolute;
       width: 515px;
@@ -244,7 +247,7 @@
     }
   }
 }
-
+ 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1444px),
   screen and (min-resolution: 192dpi) and (min-width: 71444px),
   screen and (min-resolution: 2dppx) and (min-width: 1444px) {

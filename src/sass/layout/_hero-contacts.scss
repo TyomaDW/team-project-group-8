@@ -1,3 +1,6 @@
+.hero-contacts__video {
+  border: none;
+}
 @media screen and (min-width: 320px) {
   .hero-contacts__video {
     width: 280px;
@@ -45,12 +48,17 @@
   }
 }
 .hero-contacts__title {
-  padding-bottom: 16px;
-  padding-top: 24px;
+  margin-bottom: 16px;
+  padding-top: 10px;
 }
 @media screen and (min-width: 1444px) {
   .hero-contacts__title {
-    padding-bottom: 24px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .hero-contacts__title {
+    margin-bottom: 24px;
   }
 }
 .hero-contacts__wraper-video {
@@ -58,6 +66,11 @@
 }
 .hero-contacts__item:not(:last-child) {
   margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .hero-contacts__wraper-video {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 1444px) {
   .hero-contacts__item:not(:last-child) {
@@ -86,5 +99,60 @@
 @media screen and (min-width: 1444px) {
   .common-text__hero-contacts {
     margin-bottom: 59px;
+  }
+}
+// белые элементы с тенью
+.hero-contacts__container {
+  position: relative;
+}
+.hero-contacts__wraper-video::before {
+  content: '';
+  position: absolute;
+  background-color: var(--white);
+  width: 74px;
+  height: 74px;
+  top: 220px;
+  left: -30px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 35px 0px;
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .hero-contacts__wraper-video::before {
+    top: 130px;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .hero-contacts__wraper-video::before {
+    width: 144px;
+    height: 144px;
+    border-radius: 0px 0px 72px 0px;
+  }
+}
+.hero-contacts__wraper-text::after {
+  content: '';
+  position: absolute;
+  background-color: var(--white);
+  width: 74px;
+  height: 74px;
+  top: 220px;
+  right: -30px;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 35px 0px;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+@media screen and (min-width: 768px) {
+  .hero-contacts__wraper-text::after {
+    top: 8px;
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  .hero-contacts__wraper-text::after {
+    width: 144px;
+    height: 144px;
+    border-radius: 0px 0px 72px 0px;
   }
 }
