@@ -72,7 +72,7 @@
   }
   &:nth-child(1) {
     border-radius: 0px 0px 35px 0px;
-    left: -29px;
+    left: 1px;
     top: 303px;
     @media screen and (min-width: 768px) {
       top: 300px;
@@ -88,10 +88,10 @@
   }
   &:nth-child(2) {
     border-radius: 72px;
-    right: -8px;
+    right: 1px;
     top: 589px;
     @media screen and (min-width: 768px) {
-      right: -20px;
+      right: 1px;
       top: 151px;
     }
     @media screen and (min-width: 1444px) {
@@ -117,7 +117,7 @@
   }
   &:nth-child(4) {
     border-radius: 0px 25px;
-    right: -21px;
+    right: 1px;
     top: 1033px;
     @media screen and (min-width: 768px) {
       border-radius: 0px 0px;
@@ -133,7 +133,7 @@
 
   &:nth-child(5) {
     border-radius: 0px 0px 0px 35px;
-    left: -18px;
+    left: 1px;
     top: 1070px;
     @media screen and (min-width: 768px) {
       display: none;
@@ -146,7 +146,7 @@
 
   &:nth-child(6) {
     border-radius: 25px 0px;
-    right: -15px;
+    right: 1px;
     top: 1360px;
     z-index: -1;
     @media screen and (min-width: 768px) {
