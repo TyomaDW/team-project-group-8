@@ -112,7 +112,7 @@
     width: 420px;
   }
 }
-@media screen and (min-width: 1443px) {
+@media screen and (min-width: 1444px) {
   .contacts-form__textarea {
     width: 515px;
   }
@@ -186,7 +186,6 @@
   text-transform: uppercase;
   color: #487996;
   transition: color var(--animation);
-  margin: 0 auto;
   width: 280px;
   height: 56px;
   background: #f5f5fa;
@@ -205,17 +204,11 @@
 }
 @media screen and (min-width: 768px) {
   .contacts-form__button-wraper {
-    width: 420px;
     display: flex;
     justify-content: flex-end;
   }
   .contacts-form__button {
     width: 177px;
-  }
-}
-@media screen and (min-width: 1444px) {
-  .contacts-form__button-wraper {
-    width: 515px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1443px) {
@@ -232,16 +225,6 @@
     flex-direction: row-reverse;
   }
 }
-// .contacts-form__button-text {
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.5;
-//   text-align: center;
-//   letter-spacing: 0.1em;
-//   text-transform: uppercase;
-//   color: #487996;
-//   transition: color var(--animation);
-// }
 @media screen and (min-width: 1444px) {
   .contacts__wraper:not(:last-child) {
     margin-bottom: 68px;
