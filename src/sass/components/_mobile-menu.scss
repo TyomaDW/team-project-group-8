@@ -16,19 +16,19 @@
   pointer-events: none;
   transition: opacity var(--animation), visibility var(--animation);
 
-  @media screen and (min-width: 768px) {
-    & {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-image: url(../images/fon-t/decor1.jpg);
-    }
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/fon-t/decor@2x.jpg);
-    }
-  }
+  // @media screen and (min-width: 768px) {
+  //   & {
+  //     background-size: cover;
+  //     background-repeat: no-repeat;
+  //     background-position: center;
+  //     background-image: url(../images/fon-t/decor1.jpg);
+  //   }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     background-image: url(../images/fon-t/decor@2x.jpg);
+  //   }
+  // }
 
   @media screen and (min-width: 1440px) {
     display: none;
