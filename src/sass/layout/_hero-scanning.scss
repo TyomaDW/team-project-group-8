@@ -77,7 +77,7 @@
     top: 303px;
     @media screen and (min-width: 768px) {
       top: 300px;
-      left:37px;
+      left: 37px;
       transform: rotate(180deg);
     }
     @media screen and (min-width: 1444px) {
@@ -115,11 +115,12 @@
       top: 1077px;
       border-radius: 72px;
       box-shadow: var(--shadow);
+
     }
   }
   &:nth-child(4) {
     border-radius: 0px 25px;
-    right:-21px;
+    right: -21px;
     top: 1033px;
     @media screen and (min-width: 768px) {
       border-radius: 0px 0px 0px 0px;
@@ -127,7 +128,7 @@
     }
     @media screen and (min-width: 1444px) {
       top: 667px;
-      right: -23px;
+      right: 0px;
       box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
       border-radius: 72px 0px;
     }
@@ -135,21 +136,20 @@
  
   &:nth-child(5) {
     border-radius: 0px 0px 0px 35px;
-    left:-18px;
+    left: -18px;
     top: 1070px;
     @media screen and (min-width: 768px) {
-     display: none;
+      display: none;
     }
     @media screen and (min-width: 1444px) {
       top: 210px;
       right: -155px;
     }
   }
- 
- 
+
   &:nth-child(6) {
     border-radius: 25px 0px;
-    right:-15px;
+    right: -15px;
     top: 1360px;
     z-index: -1;
     @media screen and (min-width: 768px) {
@@ -161,8 +161,7 @@
     }
   }
 }
- 
- 
+
 @media screen and (min-width: 768px) {
   .hero-scanning {
     &__container {
